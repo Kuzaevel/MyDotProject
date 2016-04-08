@@ -487,7 +487,6 @@ function chAssignment(project_id, rmUser, del) {
   <th width="10"><?php echo $AppUI->_('New Log'); ?></th>
   <th width="20"><?php echo $AppUI->_('Work');?></th>
   <th align="center"><?php sort_by_item_title('P', 'task_log_problem_priority', SORT_NUMERIC); ?></th>
-  <th width="20"><?php echo 'Id';?></th>    
   <th width="200"><?php sort_by_item_title('Task Name', 'task_name', SORT_STRING);?></th>
   <th nowrap="nowrap"><?php sort_by_item_title('Task Owner', 'user_username', SORT_STRING);?></th>
   <th nowrap="nowrap"><?php echo $AppUI->_('Assigned Users')?></th>
@@ -707,7 +706,7 @@ echo bestColor(@$p['project_color_identifier']); ?>;text-decoration:none;">
 $df = $AppUI->getPref('SHDATEFORMAT');
 ?>
 <tr>
-	<td colspan="<?php echo $cols - 3 ?>"><?php echo $AppUI->_('Summaries'); ?>: </td>
+	<td colspan="<?php echo $cols - 4 ?>"><?php echo $AppUI->_('Summaries'); ?>: </td>
 	<td><?php $summary_date = new CDate($summaries['start_date']); echo $summary_date->format($df); ?></td>
 	<td align="center"><?php echo $summaries['duration'] ?> <?php echo $AppUI->_('hours'); ?></td>
 	<td><?php $summary_date = new CDate($summaries['end_date']); echo $summary_date->format($df); ?></td>

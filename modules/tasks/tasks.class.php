@@ -2742,8 +2742,6 @@ function showtask(&$a, $level=0, $is_opened = true, $today_view = false, $hideOp
 									  . abs($a['task_priority']) . '.gif'), 13, 16, '', '');
 	}
 	$s .= ((@$a['file_count'] > 0) ? '<img src="./images/clip.png" alt="F" />' : '') . '</td>';
-	//$s .= '<td>'.$a['task_id'].'</td>';
-	$s .= '<td>1395</td>';
 	// dots
 	$s .= '<td width="' . (($today_view) ? '50%' : '90%') . '">';
 	//level
@@ -2788,7 +2786,7 @@ function showtask(&$a, $level=0, $is_opened = true, $today_view = false, $hideOp
 					  : ('&open_task_id='.$a['task_id'] . '"><img src="images/icons/expand.gif"')) 
 				   . ' border="0" alt="" /></a>');
 		}
-		$s .= ('&nbsp;<a href="./index.php?m=tasks&amp;a=view&amp;task_id=' . $a['task_id'] . '&tab=0" ' 
+		$s .= ('&nbsp;<a href="./index.php?m=tasks&amp;a=view&amp;task_id=' . $a['task_id'] . '" ' 
 			   . $alt . '>' . (($a['task_dynamic'] == 1) ? '<b><i>' : '') . $a['task_name'] . (($a['task_dynamic'] == 1) ? '</i></b>' : '') . '</a></td>');
 	} else {
 	  $s .= ('&nbsp;<a href="./index.php?m=tasks&amp;a=view&amp;task_id=' . $a['task_id'] . '" ' 
