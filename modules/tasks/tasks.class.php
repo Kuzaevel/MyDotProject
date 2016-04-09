@@ -2743,7 +2743,7 @@ function showtask(&$a, $level=0, $is_opened = true, $today_view = false, $hideOp
 	}
 	$s .= ((@$a['file_count'] > 0) ? '<img src="./images/clip.png" alt="F" />' : '') . '</td>';
 	//$s .= '<td>'.$a['task_id'].'</td>';
-	$s .= '<td>1395</td>';
+	$s .= '<td>1399</td>';
 	// dots
 	$s .= '<td width="' . (($today_view) ? '50%' : '90%') . '">';
 	//level
