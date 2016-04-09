@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="Apitent_Modern_Dotproject" uploadOnCheckin="b922592f-dac2-4df7-a4f0-372e7744a941">
+  <component name="PublishConfigData" autoUpload="On explicit save action" serverName="Apitent_Modern_Dotproject" uploadOnCheckin="b922592f-dac2-4df7-a4f0-372e7744a941" autoUploadExternalChanges="true">
     <serverData>
       <paths name="Apitent_Modern_Dotproject">
         <serverdata>
@@ -11,5 +11,6 @@
       </paths>
     </serverData>
     <option name="myUploadOnCheckinName" value="Apitent_Modern_Dotproject" />
+    <option name="myAutoUpload" value="ON_EXPLICIT_SAVE" />
   </component>
 </project>
