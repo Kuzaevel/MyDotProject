@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="b922592f-dac2-4df7-a4f0-372e7744a941" name="Apitent_Modern_Dotproject" url="http://apitent.ru/modern/dotproject/index.php?m=tasks">
+        <fileTransfer host="ftp50.hostland.ru" port="21" rootFolder="/apitent.ru/htdocs/www/modern/dotproject/" password="dfcfdf98df98df92df9adf98df9c" username="host1297870">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
