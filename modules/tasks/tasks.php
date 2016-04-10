@@ -2,6 +2,7 @@
 if (!defined('DP_BASE_DIR')) {
 	die('You should not access this file directly.');
 }
+
 //TODO: Convert Static Queries
 
 GLOBAL $m, $a, $project_id, $f, $min_view, $query_string, $durnTypes;
@@ -717,7 +718,8 @@ $df = $AppUI->getPref('SHDATEFORMAT');
 		if ($tnums && $dPconfig['enable_gantt_charts'] && !$min_view) { 
 ?>
 <tr>
-  <td colspan="<?php echo $cols; ?>" align="right">
+    //to do разобраться с количеством столбцов
+  <td colspan="<?php echo $cols+1; ?>" align="right">
 	<?php echo $AppUI->_('Expand'); ?>&nbsp;<a href="<?php echo 'index.php'.$query_string.'&amp;open_task_all=1'; ?>"><?php echo $AppUI->_('All'); ?></a>/<a href="<?php echo 'index.php'.$query_string.'&amp;open_one_level=1'; ?>"><?php echo $AppUI->_('One Level'); ?></a> : 
 	<?php echo $AppUI->_('Collapse'); ?>&nbsp;<a href="<?php echo 'index.php'.$query_string.'&amp;close_task_all=1';?>"><?php echo $AppUI->_('All'); ?></a>/<a href="<?php echo 'index.php'.$query_string.'&amp;close_one_level=1';?>"><?php echo $AppUI->_('One Level'); ?></a>
 	&nbsp;(<?php echo $AppUI->_('On Page'); ?>)&nbsp;
